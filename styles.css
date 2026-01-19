@@ -1,0 +1,62 @@
+  /* Estilização Geral */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #b3b3b3; /* Fundo cinza conforme imagem */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container Principal */
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+                .logo {
+            display: flex;
+            flex-direction: column; /* Empilha a imagem e o subtexto */
+            align-items: center;    /* Centraliza horizontalmente */
+            justify-content: center;
+            margin-bottom: 30px;    /* Espaço até os botões */
+            width: 100%;            /* Garante que ocupe a largura total para centralizar */
+        }
+
+        /* Reduz o tamanho da imagem do logo */
+        .logo img {
+            width: 800px;           /* Ajuste este valor para diminuir ou aumentar */
+            height: auto;           /* Mantém a proporção */
+            display: block;
+        }
+        /* Menu de Botões */
+        .menu-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Espaço entre os botões */
+        }
+
+        /* Estilo dos Botões */
+        .botao {
+            background-color: #ffed00; /* Amarelo */
+            color: #000;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 50px; /* Bordas arredondadas (pílula) */
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Efeito ao passar o mouse */
+        .botao:hover {
+            background-color: #ffd900;
+            transform: scale(1.05);
+        }
